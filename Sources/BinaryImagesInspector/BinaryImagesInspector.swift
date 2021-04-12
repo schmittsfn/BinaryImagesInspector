@@ -46,7 +46,7 @@ struct BinaryImagesInspector {
     
     /// Provides binary infos that are then used with the atos command to symbolicate stack traces
     ///
-    /// e.g. atos -arch arm64 -o b1f894e3-223d-3ba4-9cc7-f943ba189cae.dSYM/Contents/Resources/DWARF/SpotAngels -l 0x0000000104d94000 0x0000000105065924
+    /// e.g. atos -arch arm64 -o [YOUR-DSYM-ID].dSYM/Contents/Resources/DWARF/[YOUR APP] -l 0x0000000000000000 0x0000000000000000
     ///
     /// - Returns: An array of strings containing info on loaded binary name, its load address, architecture
     static func getBinaryImagesInfo() -> [String] {
