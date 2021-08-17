@@ -22,3 +22,11 @@ let logStr = binInfos.joined(separator: "\n")
 os_log("%{public}@", logStr)
 ```
 
+### Output:
+Example on iOS:
+```
+YourApp 0x00000001adb1e000 - arm64e - E9B05479-3D07-390C-BD36-73EEDB2B1F75
+CoreGraphics 0x00000001a92dd000 - arm64e - 2F7F6EE8-635C-332A-BAC3-EFDA4894C7E2
+CoreImage 0x00000001afc00000 - arm64e - CF56BCB1-9EE3-392D-8922-C8894C9F94C7
+
+
