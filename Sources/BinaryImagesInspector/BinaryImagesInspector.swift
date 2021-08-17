@@ -33,7 +33,7 @@ import MachO
 /// https://lowlevelbits.org/parsing-mach-o-files/
 ///
 /// https://developer.apple.com/library/archive/technotes/tn2151/_index.html
-struct BinaryImagesInspector {
+public struct BinaryImagesInspector {
     
     #if arch(x86_64) || arch(arm64)
     typealias MachHeader = mach_header_64
@@ -49,7 +49,7 @@ struct BinaryImagesInspector {
     /// e.g. atos -arch arm64 -o [YOUR-DSYM-ID].dSYM/Contents/Resources/DWARF/[YOUR APP] -l 0x0000000000000000 0x0000000000000000
     ///
     /// - Returns: An array of strings containing info on loaded binary name, its load address, architecture
-    static func getBinaryImagesInfo() -> [String] {
+    public static func getBinaryImagesInfo() -> [String] {
         let count = _dyld_image_count()
         
         var stringsToLog = [String]()
