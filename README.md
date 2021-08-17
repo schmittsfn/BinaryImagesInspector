@@ -10,5 +10,6 @@ atos -arch arm64 -o [YOUR-DSYM-ID].dSYM/Contents/Resources/DWARF/[YOUR APP] -l 0
 
 ```
 let binaryImages: [String] = BinaryImagesInspector.getBinaryImagesInfo()
+print(binaryImages)
 ```
 
