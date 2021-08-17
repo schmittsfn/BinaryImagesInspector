@@ -9,6 +9,16 @@ atos -arch arm64 -o [YOUR-DSYM-ID].dSYM/Contents/Resources/DWARF/[YOUR APP] -l 0
 ### Usage:
 
 ```
-print(BinaryImagesInspector.getBinaryImagesInfo())
+BinaryImagesInspector.getBinaryImagesInfo()
+```
+
+Example:
+```
+import BinaryImagesInspector
+import os.log
+
+let binInfos = BinaryImagesInspector.getBinaryImagesInfo()
+let logStr = binInfos.joined(separator: "\n")
+os_log("%{public}@", logStr)
 ```
 
