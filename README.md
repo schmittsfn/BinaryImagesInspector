@@ -1,4 +1,5 @@
-# BinaryImagesInspector
+![logo](https://github.com/schmittsfn/BinaryImagesInspector/assets/1940017/6ffaefe6-946c-423b-9a35-07453e1241fc)
+
 At runtime, provides an array of strings representing binary image infos that are then used with the atos command to symbolicate stack traces.
 
 e.g.:
