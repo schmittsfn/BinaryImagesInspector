@@ -5,7 +5,7 @@
 At runtime, provides an array of strings representing binary image infos that give you that information.
 
 Use case could be you have partially symbolicated crash reports and have access to the remotely generated output of this utility.  
-The build that runs it must match the build of the stack frame you want to symbolicate.
+The build that runs it must match the build that generated the stack frame you want to symbolicate.
 
 [More info](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report#)
 
