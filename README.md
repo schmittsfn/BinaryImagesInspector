@@ -1,4 +1,4 @@
-🔍 Facing unsymbolicated stack traces but don't have the load address for the atos command to manually symbolicate them? 
+🔍 Facing unsymbolicated stack frames but don't have the load address for the atos command to manually symbolicate them? 
 
 ![logo](https://github.com/schmittsfn/BinaryImagesInspector/assets/1940017/6ffaefe6-946c-423b-9a35-07453e1241fc)
 
