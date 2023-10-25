@@ -1,8 +1,14 @@
-🔍 Facing unsymbolicated stack traces while logging crashes in third-party tools? 
+🔍 Facing unsymbolicated stack traces but don't have the load address for the atos command to manually symbolicate them? 
 
 ![logo](https://github.com/schmittsfn/BinaryImagesInspector/assets/1940017/6ffaefe6-946c-423b-9a35-07453e1241fc)
 
-At runtime, provides an array of strings representing binary image infos that are then used with the atos command to symbolicate stack traces. The build used to generate the strings must match the build that generated the stack traces.
+At runtime, provides an array of strings representing binary image infos that give you that information.
+
+Use case could be you have partially symbolicated crash reports and have access to the remotely generated output of this utility.  
+The build that runs it must match the build of the stack frame you want to symbolicate.
+
+[More info](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report#)
+
 
 e.g.:
 ```
